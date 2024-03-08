@@ -1,0 +1,260 @@
+/* <<==== for extra large screen 1268px start ====>> */
+@media only screen and (max-width: 1282px) {
+  /* nav bar start */
+  .nav-bar {
+    padding: 2% 4%;
+  }
+  /* hero area start */
+  .main-heading {
+    padding-top: 50rem;
+    font-size: 8vw;
+  }
+
+  .search-bar {
+    width: 90%;
+  }
+
+  /* Exclusives section */
+  .exclusives__img-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Trending places */
+  .trending {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Travelers stories */
+  .stories {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* <<==== for extra large screen 1268px end ====>> */
+
+/* <<==== for large screen 992px start ====>> */
+@media only screen and (max-width: 992px) {
+  /* nav bar  start */
+  #header {
+    padding: 0;
+  }
+  .logo {
+    position: fixed;
+    top: 2%;
+    left: 7%;
+  }
+  .nav-bar i {
+    display: block;
+    position: fixed;
+    top: 2.8%;
+    right: 7%;
+    font-size: 3rem;
+  }
+  .login-btn {
+    order: 2;
+    position: fixed;
+    top: 2.5%;
+    right: 25%;
+    font-size: 1.4rem;
+  }
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 4rem;
+    padding: 5rem 7% 4% 0;
+    text-align: right;
+    background-image: linear-gradient(to right, #5d0881, #230231);
+    display: inline-block;
+    z-index: 10;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  .nav-items {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+  .nav-item {
+    display: block;
+    text-align: right;
+  }
+  .nav-item:hover {
+    background-color: #1c1c1c;
+  }
+  .hideMenu {
+    max-height: 45rem;
+  }
+  /* nav bar end */
+
+  /* main header content start */
+  /* hero section */
+  .main-heading {
+    padding-top: 35rem;
+  }
+  .search-bar {
+    width: 90%;
+    height: auto;
+    margin: 5rem auto;
+    border-radius: 0.6rem;
+    padding: 2rem 1rem 3rem;
+    position: relative;
+  }
+  .form {
+    display: block;
+  }
+  .form input {
+    width: 100%;
+    margin: 1rem 0 2rem 0;
+    border-bottom: 0.1rem solid #eee;
+    padding-bottom: 1rem;
+  }
+  .form button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  /* main header content end */
+
+  /* exclusive places start */
+  .exclusives__img-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* exclusive places end */
+
+  /* trending start */
+  .trending {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Travelers stories start */
+  .stories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .start-btn {
+    width: 50vw;
+  }
+}
+/* <<==== for large screen 992px end ====>> */
+
+/* <<==== for medium screen 772px start ====>> */
+@media only screen and (max-width: 772px) {
+  /* hero section */
+  .nav-items {
+    position: relative;
+  }
+  .login-btn {
+    position: absolute;
+    left: 7%;
+    top: 12rem;
+    width: 10rem;
+  }
+  .nav-item {
+    text-align: right;
+  }
+
+  .main-heading {
+    font-size: 7vh;
+  }
+
+  /* footer style start */
+  .footer-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .content-two {
+    margin-left: 0;
+  }
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-bar {
+    display: block;
+  }
+  .content-three {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* footer style end */
+}
+/* <<==== for medium screen 772px end ====>> */
+
+/* <<==== for extra small screen 576px start ====>> */
+
+@media only screen and (max-width: 576px) {
+  /* hero section */
+  .main-heading {
+    font-size: 6vh;
+    padding-top: 12rem;
+  }
+  .search-bar {
+    margin: 2rem auto;
+  }
+  /* exclusive places start */
+  .exclusives-box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .exclusives__img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* exclusive places end */
+
+  /* Trending places section */
+  .trending {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Cta section */
+  .cta-content h3 {
+    font-size: 7vw;
+  }
+  .cta-content p {
+    font-size: 1.4rem;
+    margin: 2rem 0;
+  }
+
+  /* Travelers stories section */
+  .stories {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .start-btn {
+    width: 70vw;
+  }
+
+  /* About msg section */
+  .about-msg p {
+    text-align: justify;
+  }
+
+  /* Previous next section */
+  .previous__next-parent {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .previous-btn,
+  .next-btn {
+    width: 70vw;
+    text-align: center;
+    padding: 1rem 4rem;
+  }
+  .buttons {
+    width: 90vw;
+  }
+  .buttons button {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+/* <<==== for extra small screen 576px end ====>> */
