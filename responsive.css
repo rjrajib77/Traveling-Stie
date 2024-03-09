@@ -6,12 +6,12 @@
   }
   /* hero area start */
   .main-heading {
-    padding-top: 50rem;
-    font-size: 8vw;
+    padding-top: 28rem;
+    font-size: 5vw;
   }
 
   .search-bar {
-    width: 90%;
+    width: 80%;
   }
 
   /* Exclusives section */
@@ -33,27 +33,30 @@
 
 /* <<==== for large screen 992px start ====>> */
 @media only screen and (max-width: 992px) {
+  html {
+    font-size: 60%;
+  }
   /* nav bar  start */
   #header {
     padding: 0;
   }
   .logo {
     position: fixed;
-    top: 2%;
-    left: 7%;
+    top: 2.3%;
+    left: 18%;
+    font-size: 2.6rem;
   }
   .nav-bar i {
     display: block;
     position: fixed;
-    top: 2.8%;
-    right: 7%;
-    font-size: 3rem;
+    top: 2.5%;
+    left: 7%;
+    font-size: 2.8rem;
   }
   .login-btn {
-    order: 2;
     position: fixed;
-    top: 2.5%;
-    right: 25%;
+    top: 1.8%;
+    right: 7%;
     font-size: 1.4rem;
   }
   .nav-bar {
@@ -92,6 +95,7 @@
   /* hero section */
   .main-heading {
     padding-top: 35rem;
+    font-size: 7vw;
   }
   .search-bar {
     width: 90%;
@@ -143,22 +147,20 @@
 
 /* <<==== for medium screen 772px start ====>> */
 @media only screen and (max-width: 772px) {
-  /* hero section */
-  .nav-items {
-    position: relative;
+  html {
+    font-size: 58.5%;
   }
+  /* hero section */
+
   .login-btn {
-    position: absolute;
-    left: 7%;
-    top: 12rem;
-    width: 10rem;
+    right: 7%;
   }
   .nav-item {
     text-align: right;
   }
 
   .main-heading {
-    font-size: 7vh;
+    font-size: 5vh;
   }
 
   /* footer style start */
@@ -192,13 +194,20 @@
 /* <<==== for extra small screen 576px start ====>> */
 
 @media only screen and (max-width: 576px) {
+  html {
+    font-size: 52%;
+  }
   /* hero section */
   .main-heading {
-    font-size: 6vh;
-    padding-top: 12rem;
+    font-size: 4vh;
+    padding-top: 20rem;
+  }
+  .login-btn {
+    right: 7%;
+    width: 12rem;
   }
   .search-bar {
-    margin: 2rem auto;
+    margin: 3rem auto;
   }
   /* exclusive places start */
   .exclusives-box {
@@ -239,22 +248,28 @@
   }
 
   /* Previous next section */
-  .previous__next-parent {
-    flex-direction: column;
-    gap: 2rem;
+}
+/* <<==== for extra small screen 576px end ====>> */
+@media only screen and (max-width: 378px) {
+  .main-heading {
+    padding-top: 18rem;
   }
-  .previous-btn,
-  .next-btn {
-    width: 70vw;
-    text-align: center;
-    padding: 1rem 4rem;
+  .logo {
+    top: 2.2%;
+    left: 20%;
+  }
+  .login-btn {
+    top: 1.6%;
+  }
+  .previous-btn:hover,
+  .next-btn:hover {
+    font-size: 1.4rem;
   }
   .buttons {
-    width: 90vw;
+    gap: 0.5rem;
   }
   .buttons button {
     width: 3rem;
     height: 3rem;
   }
 }
-/* <<==== for extra small screen 576px end ====>> */
