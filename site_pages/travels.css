@@ -1,0 +1,108 @@
+/* <<==== Css reset and Common code start ====>> */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+/* <<==== Css reset and Common code end ====>> */
+.section-travels {
+  background-image: linear-gradient(45deg, #b3b6b7, #f0f3f4);
+  width: 100%;
+  padding: 3rem 7%;
+}
+.article-container {
+  width: 110rem;
+  margin: 0 auto;
+}
+.article-container h2 {
+  font-size: 3.4rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  color: darkcyan;
+}
+.article-container h2 span {
+  color: #ff4800;
+}
+
+.article-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 5rem;
+}
+.content__box {
+  /* width: 40rem; */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  display: grid;
+  background-color: #fff;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.content__box:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
+}
+/* .content__box-img {
+  height: 30rem;
+  width: 30rem;
+} */
+.content__box-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.6rem;
+}
+.content__box-desc {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+.content__box-desc h3 {
+  font-size: 2rem;
+  color: #222;
+}
+.content__box-desc p {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #343434;
+}
+.content__box-desc span {
+  font-size: 1.2rem;
+  color: darkcyan;
+  display: inline-block;
+}
+.content__box-desc a {
+  font-size: 1.4rem;
+  color: darkcyan;
+  display: inline-block;
+  transition: 0.5s;
+  font-weight: 500;
+}
+.content__box-desc a:hover {
+  color: #ff4800;
+}
+
+/* <<==== Responsive style  ====>> */
+@media only screen and (max-width: 992px) {
+  .article-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .article-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .article-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

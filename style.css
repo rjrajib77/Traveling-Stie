@@ -56,7 +56,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 0;
-  background-image: linear-gradient(to right, #5d0881, #230231);
+  background-image: linear-gradient(to left, #5d0881, #230231);
   position: fixed;
   width: 100%;
   top: 0;
@@ -190,6 +190,10 @@ html {
   color: white;
   border-radius: 0.6rem;
   cursor: pointer;
+  transition: 0.5s;
+}
+.exclusive-page button:hover {
+  background-color: #af0261;
 }
 
 .exclusives__img-container {
@@ -400,6 +404,9 @@ html {
 /* <<==== Travelers-stories section section end ====>> */
 
 /* <<==== About msg section section start ====>> */
+.about-msg {
+  padding: 5rem 0 2rem 0;
+}
 .about-msg h2 {
   font-size: 3.2rem;
   text-align: center;
@@ -410,6 +417,13 @@ html {
   font-style: italic;
   text-align: center;
   color: #333;
+}
+.about-bar {
+  width: 60%;
+  height: 0.2rem;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 0.2rem solid #ccc;
 }
 /* <<==== About msg section section end ====>> */
 
@@ -462,7 +476,7 @@ html {
   transition: 0.5s;
 }
 .buttons button:hover {
-  background-color: #230231;
+  background-color: #af0261;
 }
 /* <<==== Previous next section end ====>> */
 
@@ -470,7 +484,7 @@ html {
 
 /*  <<==== Footer style start here ====>> */
 #footer {
-  background-image: linear-gradient(to left, #5d0881, #230231);
+  background-image: linear-gradient(to right, #5d0881, #230231);
   padding: 5rem 7%;
   color: white;
 }
@@ -512,7 +526,7 @@ html {
   transition: 0.5s;
 }
 .footer-link:hover {
-  color: #ff4800;
+  color: #ffc107;
 }
 
 .footer-bar {
@@ -530,13 +544,13 @@ html {
   transition: 0.5s;
 }
 .social-icon a:hover {
-  color: #ff4800;
+  color: #ffc107;
 }
 .copy {
   color: #d2d2d2;
 }
 .designer {
-  color: #ff4800;
+  color: #ffc107;
 }
 
 /*  <<==== Footer style end here ====>> */
